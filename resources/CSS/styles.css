@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(236, 236, 236);
+}
+header{
+    background-image: url(../IMG/bg_header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 624px;
+}
+.mautoi{
+    width: 100%;
+    background-color: #00000085;
+    position: absolute;
+    height: 624px;
+}
+
+
+.avt img{
+    width: 190px;
+    border-radius: 50%;
+}
+.menu{
+    padding-left: 20%;
+    animation: dixuong 3s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.hienthi{
+    opacity: 1;
+    visibility: visible;
+}
+.mobie-nav-icon{
+    font-size: 25px;
+    color: #0596fd;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: 1s;
+}
+@-webkit-keyframes dixuong{
+    0%{
+        transform: translateY(-100%) ;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+        
+    }
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.menu ul li{
+    display: inline-block;
+    margin-right: 10%;
+    font-size: 120% ;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.menu ul .thunho{
+    font-size: 100%;
+    margin-left: 12px;
+}
+.menu ul li a{
+    color: white;
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    color: rgb(180, 65, 12);
+}
+
+.head_content{
+    display: flex;
+    padding-top: 140px;
+    margin-left: 28%;
+}
+.head_text{
+    margin-left: -5%;
+    margin-top: 75px;
+    font-size: 200%;
+    color: rgb(255, 159, 159);
+    animation: goright 4s forwards;
+    animation-delay: 2s;
+
+}
+@-webkit-keyframes goright {
+    0%{
+        transform: translateX(0%) ;
+        opacity: 1;
+        visibility: visible;
+    }
+    50%{
+        transform: translateX(300%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.avt h3{
+    margin-top: 50px;
+    margin-bottom: 130px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.avt h3 span{
+    font-size: 80%;
+}
+
+.avt{
+    animation: quaphai 3s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    visibility: hidden;
+}
+@-webkit-keyframes quaphai{
+    0%{
+        transform: translateX(-300%) ;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/*----------------------------------------*/
+/*-------------------ABOUT-----------------*/
+/*-------------------------------------------*/
+.container{
+    background-color: white;
+    box-shadow: 3px 3px 3px #9c9797;
+    padding: 0;
+}
+.about_picture img{
+    width: 65%;
+    height: 250px;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+h1{
+    font-size: 250%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+}
+.about_1{
+    margin-top: 20px;
+}
+.about_text{
+    font-size: 150%;
+    width: 80%;
+    margin-left: 10%;
+
+}
+/*--------------------------------------------*/
+/*------------------SKILLS-------------------*/
+/*----------------------------------------------*/
+.section-skills{
+    background-color: rgb(248, 248, 247);
+    margin-top: 10px;
+}
+.section-skills .about_text{
+    text-align: center;
+}
+.kynang_1{
+    padding-left: 180px;
+}
+.kynang_2{
+    padding-right: 225px;
+    padding-left: 60px;
+}
+.kynang_3{
+    width: 30%;
+    margin-left: 35%;
+}
+.kynang{
+    margin-top: 20px;
+    width: 100%;
+    padding: 40px 10px;
+}
+.name_skills{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.baoquat{
+    width: 300px;
+    height: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+}
+.thanhtrong{
+    position: absolute;
+    background-color: rgb(35, 131, 155);
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 8s;
+}
+.office .thanhtrong{
+    width: 80%;
+}
+.psd .thanhtrong{
+    width: 70%;
+}
+.pts .thanhtrong{
+    width: 50%;
+}
+.fe .thanhtrong{
+    width: 80%;
+}
+.bt .thanhtrong{
+    width: 50%;
+}
+.office .diemdau{
+    left: 80%;
+}
+.psd .diemdau{
+    left: 70%;
+}
+.pts .diemdau{
+    left: 50%;
+}
+.fe .diemdau{
+    left: 80%;
+}
+.bt .diemdau{
+    left: 50%;
+}
+.diemdau{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(35, 131, 155);
+    top: -90%;
+    opacity: 0;
+    visibility: hidden;
+}
+.divao{
+    opacity: 1;
+    visibility: visible;
+}
+.disang{
+    animation: sangphai 2s forwards;
+}
+@-webkit-keyframes sangphai{
+    0%{
+        transform: translateX(-1800%) ;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+/*-----------------------------------------------------*/
+/*-------------------EDUCATION--------------------------*/
+/*------------------------------------------------------*/
+.education{
+    display: inline-block;
+    text-align: center;
+}
+.education img{
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.education img:hover{
+    transform: scale(1.3);
+}
+.uet{
+    margin-top: 90px;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.uet span{
+    color: gray;
+    font-size: 90%;
+}
+.cvp{
+    transform: translateY(-30px);
+    margin-left: 0%;
+}
+h3,h4{
+    margin-top: 10px;
+}
+/*-------------------------------------------*/
+/*------------------CONTACT-----------------*/
+/*--------------------------------------------*/
+
+.section-contact{
+    background-image:linear-gradient(45deg,rgba(2,33,64,.8) 55%,rgba(45,95,93,.85)),url(../IMG/contact_bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.section-contact h1{
+    color: white;
+}
+.address ul li{
+    list-style: none;
+}
+.infomation{
+    margin-left: 10%;
+}
+.infomation li{
+    margin-top: 20px;
+    color: white;
+    font-size: 130%;
+}
+.infomation li i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social-icon{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.social-icon li{
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    transform: 1s;
+}
+.social-icon li:hover{
+    transform: scale(1.2);
+    color: tomato;
+}
+form{
+    margin: 20px 20px;
+    background-color: rgba(95, 95, 95, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+.row{
+    margin-top: 20px;
+}
+label{
+    font-size: 120%;
+    color: white;
+    margin-left: 20px;
+}
+input,textarea{
+    width: 70%;
+    height: 50px;
+    background-color: rgba(107, 107, 107, 0.5);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+input,textarea:active{
+    border: none;
+    color: white;
+}
+.btn{
+    color: white;
+    width: 40%;
+    margin: auto;
+    background-color: chocolate;
+    font-size: 20px;
+}
+/*--------------------------------*/
+footer{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    color: rgb(185, 185, 185);
+}

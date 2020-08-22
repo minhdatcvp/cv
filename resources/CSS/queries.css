@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .head_text {
+        margin-left: -10%;
+    }
+}
+
+
+@media only screen and (max-width: 1023px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        animation: none;
+        background-color: #00000073;
+        border-radius: 5px;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        transition: 1s;
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .menu ul li::after{
+        content: " ";
+        position: absolute;
+        height: 1px;
+        width: 60%;
+        background-color: #888383;
+        margin-top: 30px;
+        left: 150px;
+    }
+    .mobie-nav-icon{
+        opacity: 1;
+        visibility: visible;
+    }
+    .head_text {
+        margin-left: -60%;
+    }
+    .head_content {
+        margin-left: 40%;
+        padding-top: 200px;
+    }
+    .kynang_2 {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .kynang_1 {
+        padding-left: 30px;
+        
+    }
+    .kynang_3 {
+        margin-left: 27%;
+    }
+    .cvp {
+        margin-top: 50px;
+        margin-left: 24%;
+    }
+    .uet {
+        margin-left: 28%;
+    }
+    .social-icon {
+        margin-left: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu ul li{
+        font-size: 100%;
+    }
+    .menu ul li::after {
+        width: 70%;
+        left: 90px;
+    }
+    .head_text {
+        margin-left: -80%;
+    }
+    .head_content {
+        padding-top: 180px;
+        margin-left: 30%;
+    }
+    .kynang_2 {
+        padding-left: 20%;
+    }
+    .kynang_1 {
+        padding-left: 20%;
+    }
+    .kynang_3 {
+        margin-left: 20%;
+    }
+    .kynang_3 .name_skills {
+        width: 220%;
+    }
+    .name_skills {
+        width: 72%;
+    }
+    .kynang{
+        margin-top: 0;
+    }
+    .uet {
+        margin-left: 17%;
+    }
+    .cvp {
+        margin-left: 10%;
+    }
+    .section-contact {
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu ul li{
+        font-size: 90%;
+    }
+    .menu ul li::after {
+        width: 65%;
+        left: 60px;
+    }
+    .menu ul .thunho{
+        font-size: 90%;
+        margin-left: 0px;
+    }
+    .head_text {
+        font-size: 150%;
+    }
+    .head_content {
+        margin-left: 21%;
+    }
+    .baoquat {
+        width: 250px;
+    }
+    .kynang_2 {
+        padding-left: 15%;
+    }
+    .kynang_1 {
+        padding-left: 15%;
+    }
+    .kynang_3 {
+        margin-left: 15%;
+    }
+    h3, h4 {
+        font-size: 125%;
+    }
+}
