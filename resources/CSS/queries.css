@@ -88,6 +88,9 @@
         padding-top: 180px;
         margin-left: 30%;
     }
+    .skills.row {
+        display: block;
+    }
     .kynang_2 {
         padding-left: 20%;
     }
